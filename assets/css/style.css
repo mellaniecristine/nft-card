@@ -1,0 +1,124 @@
+:root{
+    --blue:#8BACD9;
+    --white: #FFFFFF;
+    --cyan: #00FFF8;
+    --darkest-blue: #0D192C;
+    --dark-blue: #15263F;
+    --lightest-dark-blue: #2E405A;
+}
+*{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+body {
+    background-color: var(--darkest-blue);
+    font-family: 'Outfit', sans-serif;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+.card{
+    background-color: var(--dark-blue);
+    width: 350px;
+    box-shadow: 0px 25px 50px var(--darkest-blue);
+    border-radius: 15px;
+}
+figure{
+    background: var(--cyan);
+    margin: 24px 24px;
+    border-radius: 10px;
+    position: relative;
+}
+.eye{
+    position:absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left:50%;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+.card-pic{
+    opacity: 1;
+	transition: .3s ease-in-out;
+}
+figure:hover .card-pic{
+    opacity: .5;
+}
+figure:hover .eye{
+    opacity: 1;
+}
+.heading {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    color: var(--white);
+    padding-left: 24px;
+}
+.body-text{
+   font-weight: 300; 
+   font-size: 18px;
+   line-height: 26px;
+   color: var(--blue);
+   padding-left: 24px;
+   margin-top: 24px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.caption-highlight{
+    font-weight: 600;
+    color: var(--cyan);
+    text-transform: uppercase;
+    margin-left: 6px;
+}
+.caption{
+    color: var(--blue);
+}
+.name{
+    border-top: 1px solid var(--lightest-dark-blue);
+    display: flex;
+    align-items: center;
+}
+.caption-name{
+    margin-top: 16px;
+    margin-bottom: 32px;
+    margin-left: 16px;
+}
+a:link, a:visited{
+    color: var(--white);
+}
+a:hover{
+    color: var(--cyan);
+}
+a:link, a:visited, a:hover{
+    text-decoration: none;
+}
+.column-1{
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+} 
+.column-2{
+    display: flex;
+    align-items:center;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+.icon{
+    margin-right: 6px;
+}
+.profile{
+    margin-top: 16px;
+    margin-bottom: 32px;
+    margin-left: 24px;
+}
