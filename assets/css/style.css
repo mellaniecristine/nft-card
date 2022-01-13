@@ -33,6 +33,7 @@ figure{
     margin: 24px 24px;
     border-radius: 10px;
     position: relative;
+    cursor: pointer;
 }
 .eye{
     position:absolute;
